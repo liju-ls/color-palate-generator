@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 /* navbar -->> */
 
 .navbar {
@@ -38,7 +44,7 @@
 
 .wrapper {
     display: flex;
-    height: 100dvh;
+    height: 100%;
 }
 
 .color {

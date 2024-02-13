@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
+
+/* navbar -->> */
 
 .navbar {
     padding: 18px;
@@ -31,13 +34,37 @@
 }
 
 
+/* color pallete -->> */
+
 .wrapper {
     display: flex;
     height: 100dvh;
 }
 
 .color {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 0;
-    
+}
+
+
+/* color name container -->> */
+
+.colornameContainer {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+
+.copyIcon {
+    height: 18px;
+    width: 18px;
+}
+
+.copyIcon:active {
+    scale: 0.9;
 }

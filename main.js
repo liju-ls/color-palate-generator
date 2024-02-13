@@ -12,8 +12,8 @@ let generatePallete = () => {
         for (let i = 0; i < 6; i++)
         colorValue += hexColorValues[Math.floor(Math.random() * hexColorValues.length)];
     
-    console.log(element.firstElementChild.innerHTML = `${colorValue}`);
-    element.setAttribute("style", `background-color:${colorValue};`);
+        element.firstElementChild.firstElementChild.innerHTML = `${colorValue}`;
+        element.setAttribute("style", `background-color:${colorValue};`);
 });
 }
 
@@ -22,3 +22,13 @@ generateBtn.addEventListener("click", () => {
 });
 
 generatePallete();
+
+
+let copyIcons = document.getElementsByClassName('copyIcon');
+let copyIconArray = [...copyIcons];
+copyIconArray.forEach((element) => {
+    element.addEventListener('click', (element) => {
+        let color = element.target.parentElement.firstElementChild.innerText;
+        navigator.clipboard.writeText(color);
+    })
+});
